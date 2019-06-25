@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>suit shooter</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel='icon' href="../images/hitchacab_icon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/SSv2.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+			<header id="header">
+          <div class="logo"><a href="../index.html"><img src="../images/hitchacab_icon.ico" width="50" height="45">hitchacab</a></div>
+          <a href="#menu">Menu</a>
+        </header>
+  
+      <!-- Nav -->
+        <nav id="menu">
+          <ul class="links">
+                          <li><a href="../index.html">Home</a></li>
+                          <li><a href="../apps.html">Apps</a></li>
+                          <li><a href="../games.html">Games</a></li>
+          </ul>
+        </nav>
+    
+    
+    <!--Main-->
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">suit shooter</div>
+      </div>
+    </div>
+
+    		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+  </body>
+</html>
